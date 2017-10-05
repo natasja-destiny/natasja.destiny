@@ -1,0 +1,28 @@
+Keeps giving me an error "expecting EOF, found if"
+ 
+I'm working in processing trying to use conditionals...
+
+CODE:
+
+float x; /*global variables to fill in for repetetive arguments being used...*/
+float y; /*...furtherdown, specifically within the background, aka sky, UfoShip and MartianGuy codes*/
+color midnight = color(25, 25, 112);
+color indigo = color(75, 0, 130);
+color slateBlue = color(106, 90, 205);
+
+void setup() {
+size(700, 600);
+background(255);
+frameRate(10); //sets the rate at which the "stars" will appear
+noStroke(); // in icially was to rids of the boarder around the "stars" 
+}
+if (x > width/2) {
+color (midnight);
+}
+
+if (y > height/2) {
+color (indigo);
+} else {
+color (slateBlue);
+}
+}
